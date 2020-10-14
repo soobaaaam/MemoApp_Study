@@ -235,8 +235,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="메모 작성" id="qfI-js-34p">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="ig8-CP-8KX"/>
-                            <barButtonItem title="저장" id="hGn-VV-PkP"/>
+                            <barButtonItem systemItem="camera" id="ig8-CP-8KX">
+                                <connections>
+                                    <action selector="pick:" destination="dl9-M5-Qi5" id="EnP-fM-exK"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="저장" id="hGn-VV-PkP">
+                                <connections>
+                                    <action selector="save:" destination="dl9-M5-Qi5" id="EqP-hn-MEM"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>

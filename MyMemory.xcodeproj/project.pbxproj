@@ -17,6 +17,7 @@
 		340B42132536079C00DD0505 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B42122536079C00DD0505 /* MemoListVC.swift */; };
 		340B4215253607B300DD0505 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B4214253607B300DD0505 /* MemoFormVC.swift */; };
 		340B42192536092500DD0505 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B42182536092500DD0505 /* MemoCell.swift */; };
+		34A0B8922536BF8000302B8C /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0B8912536BF8000302B8C /* MemoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		340B42122536079C00DD0505 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		340B4214253607B300DD0505 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		340B42182536092500DD0505 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
+		34A0B8912536BF8000302B8C /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				340B4214253607B300DD0505 /* MemoFormVC.swift */,
 				340B42102536077900DD0505 /* MemoReadVC.swift */,
 				340B42182536092500DD0505 /* MemoCell.swift */,
+				34A0B8912536BF8000302B8C /* MemoData.swift */,
 			);
 			path = MyMemory;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340B42192536092500DD0505 /* MemoCell.swift in Sources */,
+				34A0B8922536BF8000302B8C /* MemoData.swift in Sources */,
 				340B42112536077900DD0505 /* MemoReadVC.swift in Sources */,
 				340B42132536079C00DD0505 /* MemoListVC.swift in Sources */,
 				340B4215253607B300DD0505 /* MemoFormVC.swift in Sources */,
