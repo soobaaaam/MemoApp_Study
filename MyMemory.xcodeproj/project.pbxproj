@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		340B41F62535C6D100DD0505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B41F52535C6D100DD0505 /* AppDelegate.swift */; };
-		340B41F82535C6D100DD0505 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340B41F72535C6D100DD0505 /* SceneDelegate.swift */; };
 		340B41FD2535C6D100DD0505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340B41FB2535C6D100DD0505 /* Main.storyboard */; };
 		340B42002535C6D100DD0505 /* MyMemory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 340B41FE2535C6D100DD0505 /* MyMemory.xcdatamodeld */; };
 		340B42022535C6D200DD0505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340B42012535C6D200DD0505 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		340B41F22535C6D100DD0505 /* MyMemory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMemory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		340B41F52535C6D100DD0505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		340B41F72535C6D100DD0505 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		340B41FC2535C6D100DD0505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		340B41FF2535C6D100DD0505 /* MyMemory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyMemory.xcdatamodel; sourceTree = "<group>"; };
 		340B42012535C6D200DD0505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				340B41F52535C6D100DD0505 /* AppDelegate.swift */,
-				340B41F72535C6D100DD0505 /* SceneDelegate.swift */,
 				340B41FB2535C6D100DD0505 /* Main.storyboard */,
 				340B42012535C6D200DD0505 /* Assets.xcassets */,
 				340B42032535C6D200DD0505 /* LaunchScreen.storyboard */,
@@ -160,7 +157,6 @@
 				340B4215253607B300DD0505 /* MemoFormVC.swift in Sources */,
 				340B42002535C6D100DD0505 /* MyMemory.xcdatamodeld in Sources */,
 				340B41F62535C6D100DD0505 /* AppDelegate.swift in Sources */,
-				340B41F82535C6D100DD0505 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,11 +9,18 @@
 import UIKit
 
 class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
+    
     // 제목 저장
     var subject: String!
     
-    @IBOutlet var contents: UITextView!
-    @IBOutlet var preview: UIImageView!
+    @IBOutlet weak var contents: UITextView!
+    @IBOutlet weak var preview: UIImageView!
+    
+
+    // 텍스트 뷰에 대한 델리게이트 패턴 구현(내용 입력 시 제목 즉각 추출)
+    override func viewDidLoad() {
+        self.contents.delegate = self
+    }
     
     // 저장 버튼을 클릭했을 때 호출되는 메소드
     @IBAction func save(_ sender: Any) {
@@ -61,10 +68,7 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         picker.dismiss(animated: false)
     }
     
-    // 텍스트 뷰에 대한 델리게이트 패턴 구현(내용 입력 시 제목 즉각 추출)
-    override func viewDidLoad() {
-        self.contents.delegate = self
-    }
+    
     
     // 사용자가 텍스트 뷰에 뭔가를 입력하면 자동으로 이 메소드가 호출된다
     func textViewDidChange(_ textView: UITextView) {

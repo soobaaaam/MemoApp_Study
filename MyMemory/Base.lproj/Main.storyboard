@@ -118,6 +118,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="DWI-eD-nx7" secondAttribute="trailing" constant="70" id="v4L-v1-mup"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="WWM-fi-Qju" id="loE-Kw-Dfo"/>
+                                    <outlet property="regdate" destination="cga-Js-pss" id="BVU-MY-zya"/>
+                                    <outlet property="subject" destination="DWI-eD-nx7" id="znD-TX-508"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="memoCellWithImage" rowHeight="80" id="yI2-kC-j8t" customClass="MemoCell" customModule="MyMemory" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="108" width="375" height="80"/>
@@ -175,6 +180,12 @@
                                         <constraint firstItem="svX-GD-gCf" firstAttribute="top" secondItem="XzC-Eh-2Yf" secondAttribute="topMargin" constant="10" id="yJg-xI-zQV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contents" destination="zOl-Ld-XNx" id="mBU-q5-Dlu"/>
+                                    <outlet property="img" destination="20T-I4-ClK" id="PDR-hs-0Ty"/>
+                                    <outlet property="regdate" destination="svX-GD-gCf" id="o5r-fc-qRq"/>
+                                    <outlet property="subject" destination="Ghz-ny-uWj" id="x9R-Yn-UyP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -205,8 +216,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Cd-97-BJa">
-                                <rect key="frame" x="16" y="64" width="343" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sAi-sp-y2r">
+                                <rect key="frame" x="16" y="329" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="LkU-TR-uBh"/>
+                                    <constraint firstAttribute="width" constant="250" id="fQe-2i-hGq"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Cd-97-BJa">
+                                <rect key="frame" x="16" y="56" width="343" height="250"/>
                                 <color key="backgroundColor" red="0.99648910449999994" green="1" blue="0.92244355649999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Nd1-ou-dTi"/>
@@ -215,13 +233,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sAi-sp-y2r">
-                                <rect key="frame" x="16" y="329" width="250" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="LkU-TR-uBh"/>
-                                    <constraint firstAttribute="width" constant="250" id="fQe-2i-hGq"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -247,6 +258,10 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contents" destination="3Cd-97-BJa" id="aNc-iS-VwR"/>
+                        <outlet property="preview" destination="sAi-sp-y2r" id="Ixo-0l-Jm8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aj-zn-M5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
